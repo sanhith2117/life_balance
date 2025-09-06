@@ -1,4 +1,8 @@
 'use client';
+await axios.post("/api/upload", formData, {
+  headers: { "Content-Type": "multipart/form-data" },
+});
+
 import React, { useState } from 'react';
 import {
   Container,
